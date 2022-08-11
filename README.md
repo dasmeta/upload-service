@@ -5,6 +5,8 @@ Strapi application for uploading files.
 
 ENV list
 ```
+ADMIN_URL=http://localhost:2357/admin
+API_URL=http://localhost:2357
 PORT=2357 
 HOST=0.0.0.0
 PROVIDER=gcs // 'gsc', 'minio' or 'local'

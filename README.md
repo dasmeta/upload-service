@@ -33,3 +33,5 @@ Open strapi admin panel
 2. create token and assign to user
 3. from settings go to USERS & PERMISSIONS PLUGIN section open authenticated role settings
 4. from upload section enable permissions for apis you need
+
+For more information you can refer to strapi documentation [here](https://docs-v3.strapi.io/developer-docs/latest/development/plugins/upload.html)

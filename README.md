@@ -25,3 +25,11 @@ MINIO_USE_SSL=true
 MINIO_HOST=127.0.0.1:9000
 MINIO_FOLDER=""
 ```
+
+### API KEY generation
+
+Open strapi admin panel 
+1. create user and assign role authenticated
+2. create token and assign to user
+3. from settings go to USERS & PERMISSIONS PLUGIN section open authenticated role settings
+4. from upload section enable permissions for apis you need

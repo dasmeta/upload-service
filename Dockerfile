@@ -7,6 +7,6 @@ ENV NODE_ENV=production
 COPY . .
 
 RUN yarn
-RUN yarn build
+# RUN yarn build
 
-CMD ["yarn", "start"]
+CMD ["sh", "-c", "yarn build && yarn start"]

@@ -28,7 +28,7 @@ module.exports = ({ env }) => {
                     serviceAccount: JSON.parse(Buffer.from(env('GCS_SERVICE_ACCOUNT', ''), 'base64').toString('utf-8') || '{}'),
                     bucketName: env('GCS_BUCKET_NAME', 'upload-service-bucket'),
                     basePath: env('GCS_BASE_PATH', ''),
-                    baseUrl: env('GCS_BASE_URL', 'https://storage.googleapis.com/upload-service-bucket'),
+                    baseUrl: env('GCS_BASE_URL', 'https://storage.googleapis.com/{bucket-name}'),
                     publicFiles: env('GCS_PUBLIC_FILES', true),
                     uniform: env('GCS_UNIFORM', false),
                 }

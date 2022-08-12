@@ -3,7 +3,7 @@ FROM node:14-slim
 WORKDIR /usr/src/app
 
 ENV NODE_ENV=production
-ENV ADMIN_URL=/strapi-upload
+ENV ADMIN_URL=/admin-upload
 
 COPY . .
 

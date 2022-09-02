@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = ({ env }) => {
 
     const provider = env('PROVIDER', 'local'); 
@@ -21,6 +23,18 @@ module.exports = ({ env }) => {
     }
 
     if(env('PROVIDER', '') === 'gcs') {
+
+        const generateUploadFileName = (file) => {
+            const backupPath =
+              file.related && file.related.length > 0 && file.related[0].ref
+                ? `${file.related[0].ref}`
+                : `${file.hash}`;
+            const filePath = file.path ? `${file.path}/` : `${backupPath}/`;
+            const extension = file.ext.toLowerCase();
+            const fileName = path.basename(file.hash);
+            return `${filePath}${fileName}${extension}`;
+        };
+
         return {
             upload: {
                 provider: 'google-cloud-storage',
@@ -31,6 +45,7 @@ module.exports = ({ env }) => {
                     baseUrl: env('GCS_BASE_URL', 'https://storage.googleapis.com/{bucket-name}'),
                     publicFiles: env('GCS_PUBLIC_FILES', true),
                     uniform: env('GCS_UNIFORM', false),
+                    generateUploadFileName
                 }
             }
         }

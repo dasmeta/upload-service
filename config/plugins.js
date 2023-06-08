@@ -7,7 +7,7 @@ module.exports = ({ env }) => {
     if(provider === 'minio') {
         return {
             upload: {
-                provider: 'minio-ce',
+                provider: 'minio',
                 providerOptions: {
                     accessKey: env('MINIO_ACCESS_KEY', ''),
                     secretKey: env('MINIO_SECRET_KEY', ''),

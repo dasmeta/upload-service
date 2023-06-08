@@ -1,0 +1,19 @@
+{
+    "name": "strapi-provider-upload-minio",
+    "version": "1.0.0",
+    "description": "minio provider for strapi ce 3.6.8 and 4.0.0",
+    "main": "index.js", 
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "minio",
+      "strapi.io"
+    ],
+    "author": "Hovhannes Babayan",
+    "license": "MIT",
+    "dependencies": {
+      "minio": "^7.0.19"
+    }
+  }
+  

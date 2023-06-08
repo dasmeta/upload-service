@@ -1,7 +1,7 @@
 {
   "name": "@dasmeta/upload-service",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A Strapi application for upload files",
   "scripts": {
     "develop": "strapi develop",
@@ -21,7 +21,7 @@
     "strapi-plugin-upload": "3.6.10",
     "strapi-plugin-users-permissions": "3.6.10",
     "strapi-provider-upload-google-cloud-storage": "npm:@strapi-community/strapi-provider-upload-google-cloud-storage@4.1.7",
-    "strapi-provider-upload-minio-ce": "^1.0.5",
+    "strapi-provider-upload-minio": "file:providers/strapi-provider-upload-minio",
     "strapi-utils": "3.6.10"
   },
   "author": {

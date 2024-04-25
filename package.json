@@ -11,18 +11,18 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "strapi": "3.6.10",
-    "strapi-admin": "3.6.10",
-    "strapi-connector-mongoose": "3.6.10",
-    "strapi-plugin-content-manager": "3.6.10",
-    "strapi-plugin-content-type-builder": "3.6.10",
-    "strapi-plugin-email": "3.6.10",
-    "strapi-plugin-i18n": "3.6.10",
-    "strapi-plugin-upload": "3.6.10",
-    "strapi-plugin-users-permissions": "3.6.10",
+    "strapi": "3.6.11",
+    "strapi-admin": "3.6.11",
+    "strapi-connector-mongoose": "3.6.11",
+    "strapi-plugin-content-manager": "3.6.11",
+    "strapi-plugin-content-type-builder": "3.6.11",
+    "strapi-plugin-email": "3.6.11",
+    "strapi-plugin-i18n": "3.6.11",
+    "strapi-plugin-upload": "3.6.11",
+    "strapi-plugin-users-permissions": "3.6.11",
     "strapi-provider-upload-google-cloud-storage": "npm:@strapi-community/strapi-provider-upload-google-cloud-storage@4.1.7",
     "strapi-provider-upload-minio": "file:providers/strapi-provider-upload-minio",
-    "strapi-utils": "3.6.10"
+    "strapi-utils": "3.6.11"
   },
   "author": {
     "name": "Hovhannes Babayan"

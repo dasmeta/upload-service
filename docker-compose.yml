@@ -1,0 +1,33 @@
+version: '3'
+services:
+  strapi-upload:
+    build: 
+      context: .
+      dockerfile: Dockerfile.dev
+    environment:
+      DATABASE_URL: mongodb://strapi:strapi@mongo/strapi
+      AUTHENTICATION_DATABASE: admin
+    command: >
+      bash -c "yarn
+      && yarn develop"
+    volumes:
+      - ./api:/usr/src/app/api
+      - .env:/usr/src/app/.env
+    #   - ./app:/usr/src/app
+    ports:
+      - 2357:1337
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo:4
+    environment:
+      MONGO_INITDB_DATABASE: strapi
+      MONGO_INITDB_ROOT_USERNAME: strapi
+      MONGO_INITDB_ROOT_PASSWORD: strapi
+    ports:
+      - '27617:27017'
+    volumes:
+      - mongodb_data:/data/db
+
+volumes:
+  mongodb_data:

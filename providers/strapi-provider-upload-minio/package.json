@@ -13,7 +13,7 @@
     "author": "Hovhannes Babayan",
     "license": "MIT",
     "dependencies": {
-      "minio": "^7.0.19"
+      "minio": "7.0.19"
     }
   }
   
